@@ -17,6 +17,10 @@ services:
       - POSTGRES_DB=n8n
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
+      - N8N_HOST=misape-automation.onrender.com
+      - N8N_PROTOCOL=https
+      - N8N_PORT=10000
+      - N8N_PUBLIC_URL=https://misape-automation.onrender.com
     ports:
       - 5432:5432
     tmpfs:
